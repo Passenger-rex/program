@@ -1,0 +1,84 @@
+* {box-sizing: border-box}
+
+
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#navbar {
+  width: 100%;
+  background-color:  #222;
+  overflow: auto;
+  position: fixed;
+  top: -100px;
+  display: block;
+  transition: top .6s;
+}
+
+#navbar a {
+  float: left;
+  padding: 17px;
+  color: coral;
+  text-decoration: none;
+  font-size: 30px;
+  width: 20%; /* Five links of equal widths */
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 550;
+  font-family: 'Franklin Gothic';
+}
+
+#navbar a:hover {
+  background-color:  #442;
+}
+
+#navbar a.active {
+  background-color: #04aa6d;
+}
+
+@media screen and (max-width: 500px) {
+  #navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+}
+
+.text{
+    align-items: center;
+    display: flex;
+    font-size: 48px;
+    justify-content: space-between;
+}
+
+#text-a{
+    margin: 17px;
+    font-weight: 600;
+    color: #777;
+    font-family: 'Franklin Gothic';
+}
+
+
+.fa {
+    color: #fff;
+}
+
+
+#logo{
+    width: 55px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    margin-top: 20px;
+}
