@@ -1,51 +1,199 @@
 * {box-sizing: border-box}
 
 
+html{
+  scroll-behavior: smooth;
+  transition: .6s;
+}
+
 body {
   margin: 0;
-  background-color: #f1f1f1;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.home{
+  background: url(pexels.jpg) no-repeat center center/ cover;
+  height: 100%;
+}
+
+.about{
+  background-color: #eee;
+  height: 100vh;
+}
+
+.head2{
+  width: 100%;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-about-head{
+  font-size: 50px;
+  font-weight: 538;
+  color: #222;
+  text-shadow: 1px 1px #000;
+}
+
+.contact{
+  background-color: #eee;
+  height: 100vh;
+}
+
+.head3{
+  width: 100%;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-contact-head{
+  font-size: 50px;
+  font-weight: 538;
+  color: #222;
+  text-shadow: 1px 1px #000;
+}
+
+.services{
+  background-color: #eee;
+  height: 100vh;
+}
+
+.head{
+  width: 100%;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-head{
+  font-size: 50px;
+  font-weight: 538;
+  color: #222;
+  text-shadow: 1px 1px #000;
+}
 
 #navbar {
   width: 100%;
-  background-color:  #222;
+  background-color:  #ddd;
   overflow: auto;
   position: fixed;
-  top: -100px;
+  top: -150px;
   display: block;
   transition: top .6s;
+  box-shadow: 0 0 22px #000;
 }
 
 #navbar a {
   float: left;
-  padding: 17px;
-  color: coral;
+  padding: 19px;
+  color: #c6c624;
   text-decoration: none;
-  font-size: 30px;
-  width: 20%; /* Five links of equal widths */
+  font-size: 28px;
+  width: 25%; /* Five links of equal widths */
   text-align: center;
   text-transform: uppercase;
-  font-weight: 550;
+  font-weight: 700;
   font-family: 'Franklin Gothic';
 }
 
+
+.middle-container{
+  text-align: center;
+  display: block;
+  align-self: center;
+  justify-self: center;
+  min-height: 450px;
+  margin-top: 50px;
+}
+
+
+#mid-text{
+  color: #ff0000;
+  text-shadow: 2px 2px black;
+}
+
+.text-view{
+  line-height: 1.5;
+  font-size: 60px;
+  width: 100%;
+  color: #bbb;
+  text-shadow: 1px 1px #000;
+  font-family: 'Franklin Gothic medium', 'Segoe UI';
+  margin-bottom: 30px;
+}
+
+
+#button{
+  padding: 15px 50px;
+  color: #04aa6d;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+  box-shadow: 0 0 5px #000;
+  transition:  all .6s;
+  margin-right: 4;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+#button span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+} 
+#button span:after {
+  content: '\279D';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  margin-left: 10px;
+}
+#button:hover span{
+  padding-right: 25px;
+}
+#button:hover span:after{
+  opacity: 1;
+  right: 1;
+}
+
+#button:hover{
+  background-color: #04aa6d;
+  border-color: #04aa6d;
+}
+
 #navbar a:hover {
-  background-color:  #442;
+  background-color:  #222;
 }
 
 #navbar a.active {
-  background-color: #04aa6d;
+  background-color: #000;
 }
 
-@media screen and (max-width: 500px) {
-  #navbar a {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
+footer{
+  width: 100%;
+  text-align: center;
+  background-color: #eef;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium';
+  font-weight: bold;
+  overflow: hidden;
+}
+
+hr{
+  width: 90%;
+  color: #fff;
+  background-color: #000;
 }
 
 .header{
@@ -65,13 +213,14 @@ body {
 #text-a{
     margin: 17px;
     font-weight: 600;
-    color: #777;
+    color: #ff2;
     font-family: 'Franklin Gothic';
+    text-shadow: 2px 2px #000;
 }
 
 
 .fa {
-    color: #fff;
+    color: #ffa700;
 }
 
 
@@ -81,4 +230,112 @@ body {
     border-radius: 50%;
     align-items: center;
     margin-top: 20px;
+}
+.nid-text{
+  color: #ffe900;
+  font-family: 'Franklin Gothic';
+}
+
+
+
+
+
+@media screen and (max-width: 1158px) {
+  #navbar a {
+    float: left;
+    display: block;
+    width: 25%;
+    text-align: center;
+    font-size: 6px;
+    padding: 11px;
+    position: relative;
+  }
+  #navbar {
+    width: 100%;
+    background-color:  #ddd;
+    overflow: auto;
+    position: fixed;
+    top: -150px;
+    display: block;
+    transition: top .6s;
+    
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: -50px;
+  }
+
+  #text-a{
+    left : -9px;
+    font-weight: 600;
+    text-shadow: 2px 2px #000;
+    color: #ff2;
+    font-family: 'Franklin Gothic';
+    position: relative;
+    font-size: 22px;
+    bottom: -4px
+  }
+  .middle-container{
+    text-align: center;
+    display: block;
+    align-self: center;
+    justify-self: center;
+    
+    margin-top: 50px;
+    position: relative;
+  }
+  .text-head{
+    font-size: 28px;
+    font-weight: 538;
+    color: #222;
+  }
+  .text-about-head{
+    font-size: 28px;
+    font-weight: 538;
+    color: #222;
+  }
+  .text-contact-head{
+    font-size: 28px;
+    font-weight: 538;
+    color: #222;
+  }
+  .text-view{
+    line-height: 1.2;
+    font-size: 33px;
+    width: 100%;
+    color: #fff;
+    font-family: 'Franklin Gothic medium', 'Segoe UI';
+    position: relative;
+  }
+  #button{
+    padding: 8px 18px;
+    position: relative;
+    font-size: 25px;
+  }
+  #button:hover span:after{
+    opacity: 1;
+    right: -1;
+   
+  }
+  #button span:after {
+    right: -10px;
+  }
+  #logo{
+    width: 32px;
+    height: 27px;
+    border-radius: 50%;
+  }
+
+  .home{
+    position: relative;
+    height: 70vh;
+  }
+  
+  #navbar a:hover {
+    background-color:  #222;
+    position: relative;
+  }
 }
