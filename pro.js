@@ -54,4 +54,11 @@ for (let i = 0; i < btns.length; i++) {
   location.href= "#about"
  })
 
+//Dark Mode
+
+function darkMode() {
+  let element = document.body;
+  element.classList.toggle("dark");
+}
+
 

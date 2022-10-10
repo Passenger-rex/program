@@ -8,16 +8,65 @@ html{
 
 body {
   margin: 0;
+  background-color: #fff;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-adjust{
+  color: #fff;
+  
+  padding: 15px 60px;
+  
+}
+
+.dark{
+  background-color: #000;
+}
+
+
+.dark .home{
+  background-color: #000;
+}
+.dark .about{
+  background-color: #000;
+}
+.dark .contact{
+  background-color: #000;
+}
+.dark .services{
+  background-color: #000;
+}
+
+.dark .text-view{
+  color: #fff;
+}
+
+.dark .button {
+  border: 2px solid #fff;
+}
+
+.dark footer{
+  color: #000;
+}
+
+.dark hr{
+  color: slategrey;
+  background-color: #fff;
+}
+
 .home{
-  background: url(pexels.jpg) no-repeat center center/ cover;
+  background-color: #fff;
   height: 100%;
 }
 
 .about{
-  background-color: #eee;
+  background-color: #fff;
   height: 100vh;
 }
 
@@ -27,6 +76,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 28px;
 }
 
 .text-about-head{
@@ -37,7 +87,7 @@ body {
 }
 
 .contact{
-  background-color: #eee;
+  background-color: #fff;
   height: 100vh;
 }
 
@@ -47,6 +97,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 28px;
 }
 
 .text-contact-head{
@@ -57,7 +108,7 @@ body {
 }
 
 .services{
-  background-color: #eee;
+  background-color: #fff;
   height: 100vh;
 }
 
@@ -67,6 +118,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 28px;
 }
 
 .text-head{
@@ -120,7 +172,7 @@ body {
   line-height: 1.5;
   font-size: 60px;
   width: 100%;
-  color: #bbb;
+  color: #000;
   text-shadow: 1px 1px #000;
   font-family: 'Franklin Gothic medium', 'Segoe UI';
   margin-bottom: 30px;
@@ -129,9 +181,9 @@ body {
 
 #button{
   padding: 15px 50px;
-  color: #04aa6d;
+  
   background-color: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #000;
   border-radius: 8px;
   font-weight: bolder;
   font-size: 30px;
@@ -173,7 +225,7 @@ body {
 }
 
 #navbar a:hover {
-  background-color:  #222;
+  background-color:  #777;
 }
 
 #navbar a.active {
@@ -183,7 +235,7 @@ body {
 footer{
   width: 100%;
   text-align: center;
-  background-color: #eef;
+  background-color: #fff;
   font-size: 16px;
   font-family: 'Franklin Gothic Medium';
   font-weight: bold;
@@ -192,7 +244,7 @@ footer{
 
 hr{
   width: 90%;
-  color: #fff;
+  color: darkslategrey;
   background-color: #000;
 }
 
@@ -220,9 +272,16 @@ hr{
 
 
 .fa {
-    color: #ffa700;
+    color: #ffa500;
 }
 
+#lo{
+  color: #000;
+}
+
+.dark #lo{
+  color: #fff;
+}
 
 #logo{
     width: 55px;
@@ -236,7 +295,14 @@ hr{
   font-family: 'Franklin Gothic';
 }
 
-
+.form-area{
+  text-align: center;
+  display: block;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 50%;
+  background-color: #c6c624;
+}
 
 
 
@@ -324,8 +390,8 @@ hr{
     right: -10px;
   }
   #logo{
-    width: 32px;
-    height: 27px;
+    width: 30px;
+    height: 25px;
     border-radius: 50%;
   }
 
@@ -337,5 +403,11 @@ hr{
   #navbar a:hover {
     background-color:  #222;
     position: relative;
+  }
+  #lo{
+    position: relative;
+    font-size: 22px;
+    bottom: -7px;
+    left: -50px;
   }
 }
